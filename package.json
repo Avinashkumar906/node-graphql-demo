@@ -1,0 +1,23 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "description": "graphql api learning",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://avinashkumar906@bitbucket.org/avinashkumar906/graphql.git"
+  },
+  "keywords": [
+    "graphql",
+    "express.js"
+  ],
+  "author": "Avinash Aggarwal",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/avinashkumar906/graphql#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
