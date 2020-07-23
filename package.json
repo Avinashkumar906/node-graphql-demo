@@ -1,10 +1,11 @@
 {
-  "name": "graphql",
+  "name": "graphqlapi",
   "version": "1.0.0",
   "description": "graphql api learning",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "start:dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,13 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/avinashkumar906/graphql#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "graphql": "^15.3.0",
+    "lodash": "^4.17.19"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }

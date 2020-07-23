@@ -1,12 +1,9 @@
-var http = require('http');
-//var util = require('util');
+const server = require('./app')
 
-var app_port = process.env.app_port || process.env.PORT ||8080;
+//setting eniroment variables
+var app_port = process.env.app_port || process.env.PORT ||8000;
 var app_host = process.env.app_host || '127.0.0.1';
 
-http.createServer(function(req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.write('Hello World from Cloudnode\n\n');
-    res.end();
-}).listen(app_port);
-console.log('Web server running at http://' + app_host + ':' + app_port);
+
+//starting server on given port
+server.listen(app_port,app_host,()=>console.log(`server up @ ${app_host}:${app_port}`))
