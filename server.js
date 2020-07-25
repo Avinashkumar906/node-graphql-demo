@@ -1,7 +1,7 @@
 const server = require('./app')
 
 //setting eniroment variables
-var app_port = process.env.app_port || process.env.PORT ||8000;
+var app_port = process.env.app_port || process.env.PORT || 8000;
 var app_host = process.env.app_host || '127.0.0.1';
 
 
